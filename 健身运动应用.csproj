@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{947BE597-D025-4184-A805-CCF4096FCA82}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>健身运动应用</RootNamespace>
+    <AssemblyName>健身运动应用</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin">
+      <HintPath>E:\BaiduNetdiskDownload\MaterialSkin\CeBianLan\bin\Debug\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acc.cs" />
+    <Compile Include="account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="account.Designer.cs">
+      <DependentUpon>account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bmi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bmi.Designer.cs">
+      <DependentUpon>bmi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="daydiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="daydiet.Designer.cs">
+      <DependentUpon>daydiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="diet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diet.Designer.cs">
+      <DependentUpon>diet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dietadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dietadd.Designer.cs">
+      <DependentUpon>dietadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dr.Designer.cs">
+      <DependentUpon>dr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="feedback.Designer.cs">
+      <DependentUpon>feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fitness.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fitness.Designer.cs">
+      <DependentUpon>fitness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fitnessadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fitnessadd.Designer.cs">
+      <DependentUpon>fitnessadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="pwdchange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pwdchange.Designer.cs">
+      <DependentUpon>pwdchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sleep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sleep.Designer.cs">
+      <DependentUpon>sleep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sleepadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sleepadd.Designer.cs">
+      <DependentUpon>sleepadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="social.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="social.Designer.cs">
+      <DependentUpon>social.cs</DependentUpon>
+    </Compile>
+    <Compile Include="spre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="spre.Designer.cs">
+      <DependentUpon>spre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user.Designer.cs">
+      <DependentUpon>user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\cn.com.webxml.www\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="account.resx">
+      <DependentUpon>account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bmi.resx">
+      <DependentUpon>bmi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="daydiet.resx">
+      <DependentUpon>daydiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="diet.resx">
+      <DependentUpon>diet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dietadd.resx">
+      <DependentUpon>dietadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dr.resx">
+      <DependentUpon>dr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feedback.resx">
+      <DependentUpon>feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fitness.resx">
+      <DependentUpon>fitness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fitnessadd.resx">
+      <DependentUpon>fitnessadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pwdchange.resx">
+      <DependentUpon>pwdchange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sleep.resx">
+      <DependentUpon>sleep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sleepadd.resx">
+      <DependentUpon>sleepadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="social.resx">
+      <DependentUpon>social.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="spre.resx">
+      <DependentUpon>spre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user.resx">
+      <DependentUpon>user.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\cn.com.webxml.www\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\cn.com.webxml.www\WeatherWebService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\健身.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\账户.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\注册.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\login %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\登录.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\menu 0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\账号管理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\饮食.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\健身房.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\睡眠 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\昵称.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\点.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\ums-admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\关机.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\晴天.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\提醒-填充.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\提醒.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\计算.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\意见反馈.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\主页.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\多云.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\业务推荐.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\加.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\返回.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\tp1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\社区.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\tp3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\朋友圈.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.webxml.com.cn/WebServices/WeatherWebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\cn.com.webxml.www\</RelPath>
+      <UpdateFromURL>http://www.webxml.com.cn/WebServices/WeatherWebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>健身运动应用_cn_com_webxml_www_WeatherWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\cn.com.webxml.www\WeatherWebService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\点赞.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\点赞1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\刷新.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon图库\美食.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
